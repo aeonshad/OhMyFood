@@ -12,4 +12,48 @@ body {
   display: flex;
 }
 
+.main-container {
+  width: 100%;
+}
+
+.navbar {
+  height: 63px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-logo {
+  height: 44px;
+  width: 162px;
+}
+
+.search {
+  height: 50px;
+  width: 100%;
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-logo {
+  margin-right: 17px;
+}
+.search-logo .fa-solid {
+  height: 16px;
+  display: flex;
+  align-items: center;
+  color: #353535;
+}
+.search-input {
+  background-color: #EAEAEA;
+  color: #353535;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 109px;
+}
+
 /*# sourceMappingURL=main.css.map */

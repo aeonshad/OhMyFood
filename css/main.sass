@@ -1,3 +1,9 @@
+$primary-color: #9356DC
+$secondary-color: #FF79DA
+$tertiary-color: #99E2D0
+$grey-light: #EAEAEA
+$grey-dark: #353535
+
 *
     box-sizing: border-box
     margin: 0
@@ -9,3 +15,40 @@
 
 body
     display: flex
+
+.main-container
+    width: 100%
+
+.navbar
+    height: 63px
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    &-logo
+        height: 44px
+        width: 162px
+
+.search
+    height: 50px
+    width: 100%
+    background-color: #EAEAEA
+    display: flex
+    justify-content: center
+    align-items: center
+    &-logo
+        margin-right: 17px
+        & .fa-solid
+            height: 16px
+            display: flex
+            align-items: center
+            color: #353535
+    &-input
+        background-color: #EAEAEA
+        color: #353535
+        font-family: Roboto
+        font-size: 16px
+        font-style: normal
+        font-weight: 500
+        line-height: normal
+        width: 109px
