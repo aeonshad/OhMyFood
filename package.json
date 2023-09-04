@@ -1,0 +1,9 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Site internet qui répertorie les menus de restaurants gastronomiques de la société Ohmyfood.",
+  "main": "index.html",
+  "scripts": {},
+  "author": "Philippe",
+  "license": "ISC"
+}
