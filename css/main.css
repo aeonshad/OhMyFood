@@ -178,6 +178,21 @@ body {
 .restaurants-card:not(:last-child) {
   margin-bottom: 18px;
 }
+.restaurants-card-header {
+  position: relative;
+}
+.restaurants-card-header .popup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 13px;
+  margin-right: 13px;
+  padding: 7px 9px 7px 9px;
+  background-color: #99E2D0;
+  color: #008766;
+  font-weight: 700;
+  font-size: 14px;
+}
 .restaurants-card-image {
   height: 231px;
   width: 100%;
