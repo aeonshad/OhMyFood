@@ -28,9 +28,14 @@ body
     display: flex
     justify-content: center
     align-items: center
+    position: relative
     &-logo
         height: 44px
         width: 162px
+    & a
+        color: black
+        position: absolute
+        left: 17px
 
 .footer
     width: 100%
@@ -55,6 +60,7 @@ body
         & .fa-solid
             margin-right: 10px
             width: 20px
+
 .search
     height: 50px
     width: 100%
@@ -153,6 +159,8 @@ body
     &-card
         border-radius: 15px 15px 15px 15px
         background-color: #FFFFFF
+        text-decoration: none
+        color: black
         &:not(:last-child)
             margin-bottom: 18px
         &-header
@@ -206,7 +214,120 @@ body
     font-weight: 700
     margin-bottom: 26px
 
+.font-title2
+    font-family: Shrikhand
+    font-size: 28px
+    font-weight: 400
+    color: black
+
 .font-subtitle
     font-size: 18px
     font-weight: 700
     margin-bottom: 5px
+
+.font-subtitle2
+    font-size: 16px
+    font-weight: 30
+    margin-bottom: 5px
+    text-transform: uppercase
+
+.font-subtitle3
+    font-size: 18px
+    font-weight: 700
+    text-overflow: ellipsis
+    overflow: hidden
+    white-space: nowrap
+
+.menu-header
+    height: 275px
+    width: 100%
+    object-fit: cover
+
+.menu
+    padding-top: 32px
+    padding-bottom: 40px
+    padding-left: 13px
+    padding-right: 13px
+    border-radius: 40px 40px 0px 0px
+    position: relative
+    top: -40px
+    background-color: $background-color
+    &-card-header
+        position: relative
+    &-card-section
+        margin-top: 42px
+        &-underline
+            height: 3px
+            width: 40px
+            background-color: $tertiary-color
+            margin-bottom: 12px
+    &-card-article
+        background-color: #FFFFFF
+        border-radius: 15px
+        display: flex
+        position: relative
+        &:hover .menu-card-selected
+            display: flex
+            animation: Slide 350ms linear 0s 1 normal backwards
+        &:hover .menu-card-article-content
+            margin-right: 60px
+            transition: 0.5s ease
+        &:not(:last-child)
+            margin-bottom: 12px
+        &-content
+            display: flex
+            flex-direction: column
+            width: 100%
+            padding: 13px 15px
+            overflow: hidden
+            & .text
+                font-size: 15px
+                text-overflow: ellipsis
+                overflow: hidden
+                white-space: nowrap
+            & .price
+                font-size: 15px
+                font-weight: 700
+        &-info
+            display: flex
+            margin-top: 5px
+            justify-content: space-between
+            overflow: hidden
+
+    &-card-selected
+        background-color: $tertiary-color
+        width: 60px
+        height: 100%
+        display: none
+        align-items: center
+        justify-content: center
+        border-radius: 0px 15px 15px 0px
+        position: absolute
+        right: 0
+        bottom: 0
+        & i
+            animation: Rotation 0.7s ease 0s 1 normal none
+        & .fa-circle-check
+            color: #FFFFFF
+    &-card-btn
+        margin-top: 40px
+        display: flex
+        justify-content: center
+        & .btn
+            padding: 16px 49px
+
+@keyframes Rotation
+    0%
+        transform: rotate(0)
+
+    100%
+        transform: rotate(360deg)
+
+@keyframes Slide
+    0%
+        transform: scaleX(0)
+        transform-origin: 100% 100%
+
+    100%
+        transform: scaleX(1)
+        transform-origin: 100% 100%
