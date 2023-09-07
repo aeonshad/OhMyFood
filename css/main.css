@@ -229,23 +229,29 @@ body {
   font-weight: 300;
 }
 .restaurants-card-icon {
-  margin-right: 10px;
+  margin-right: 30px;
   position: absolute;
   right: 25px;
   top: 10px;
 }
-.restaurants-card-icon img {
+.restaurants-card-icon svg {
   position: absolute;
   cursor: pointer;
+  height: 20px;
+  stroke-width: 20;
+  stroke: black;
+  fill: #F6F6F6;
 }
 .restaurants-card-icon .heart-full {
   opacity: 0;
-  transition-property: all;
+  fill: url(#text-fill);
+  z-index: 1;
   transition-duration: 0.5s;
+  stroke-width: 0;
 }
 .restaurants-card-icon .heart-full:hover {
   opacity: 1;
-  background-clip: text;
+  transition-duration: 0.5s;
 }
 
 .font-title {

@@ -199,20 +199,26 @@ body
                 font-size: 17px
                 font-weight: 300
         &-icon
-            margin-right: 10px
+            margin-right: 30px
             position: absolute
             right: 25px
             top: 10px
-            & img
+            & svg
                 position: absolute
                 cursor: pointer
-            & .heart-full
+                height: 20px
+                stroke-width: 20
+                stroke: black
+                fill: $background-color
+            .heart-full
                 opacity: 0
-                transition-property: all
+                fill: url(#text-fill)
+                z-index: 1
                 transition-duration: 0.5s
+                stroke-width: 0
                 &:hover
                     opacity: 1
-                    background-clip: text
+                    transition-duration: 0.5s
 
 .font-title
     font-size: 24px
@@ -422,6 +428,7 @@ body
             cursor: pointer
             &:hover
                 background-color: #f8f8f8
+
     .font-title
         margin-left: auto
         margin-right: auto
