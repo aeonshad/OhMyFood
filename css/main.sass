@@ -165,6 +165,7 @@ body
         background-color: #FFFFFF
         text-decoration: none
         color: black
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10)
         &:not(:last-child)
             margin-bottom: 18px
         &-header
@@ -381,6 +382,8 @@ body
             margin: auto
         &-card
             width: 47%
+            &:hover
+                transform: scale(1.019)
             &:any-link
                 margin-bottom: 18px
 
@@ -415,6 +418,10 @@ body
                 align-items: center
                 position: relative
                 margin-left: 25px
+        &-card-article
+            cursor: pointer
+            &:hover
+                background-color: #f8f8f8
     .font-title
         margin-left: auto
         margin-right: auto
