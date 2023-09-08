@@ -9,10 +9,6 @@
   font-weight: 400;
 }
 
-body {
-  display: flex;
-}
-
 .main-container {
   width: 100%;
 }
@@ -464,6 +460,9 @@ body {
   }
   .restaurants-card:any-link {
     margin-bottom: 50px;
+  }
+  .restaurants-card-info {
+    padding-left: 20px;
   }
   .footer {
     flex-direction: row-reverse;
