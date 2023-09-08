@@ -1,0 +1,33 @@
+.loader
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: auto
+    position: fixed
+    justify-content: center
+    z-index: 1
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    animation: hideLoader 1s ease-in-out 3s forwards
+    background-color: $grey-light
+    &-container
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 60px 30px 30px 30px
+        background-color: $background-color
+        border-radius: 15px
+
+.animation
+    display: flex
+    margin-bottom: 5px
+
+.colorful
+    width: 31.4px
+    height: 31.4px
+    background: $primary-color
+    border-radius: 50%
+    animation: loader 1.3s infinite
+    margin-bottom: 15px

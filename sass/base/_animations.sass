@@ -1,0 +1,49 @@
+@keyframes loader
+    0%, 100%
+        transform: translate(-39.2px)
+        box-shadow: 0 0 $secondary-color, 0 0 $tertiary-color
+
+    40%
+        transform: translate( 39.2px)
+        box-shadow: -16.8px 0 $secondary-color,-33.6px 0 $tertiary-color
+
+    50%
+        transform: translate( 39.2px)
+        box-shadow: 0 0 $secondary-color, 0 0 $tertiary-color
+
+    90%
+        transform: translate(-39.2px)
+        box-shadow: 16.8px 0 $secondary-color, 33.6px 0 $tertiary-color
+
+@keyframes hideLoader
+    0%
+        opacity: 1
+        z-index: 1
+
+    100%
+        opacity: 0
+        z-index: -1
+
+@keyframes Fade
+    0%
+        transform: translateX(-50px)
+
+    100%
+        opacity: 1
+        transform: translateX(0)
+
+@keyframes Rotation
+    0%
+        transform: rotate(0)
+
+    100%
+        transform: rotate(360deg)
+
+@keyframes Slide
+    0%
+        transform: scaleX(0)
+        transform-origin: 100% 100%
+
+    100%
+        transform: scaleX(1)
+        transform-origin: 100% 100%

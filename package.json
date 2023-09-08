@@ -4,7 +4,7 @@
   "description": "Site internet qui répertorie les menus de restaurants gastronomiques de la société Ohmyfood.",
   "main": "index.html",
   "scripts": {
-    "sass": "sass css/main.sass css/main.css --watch"
+    "sass": "sass sass/main.sass css/main.css --watch"
   },
   "author": "Philippe",
   "license": "ISC",

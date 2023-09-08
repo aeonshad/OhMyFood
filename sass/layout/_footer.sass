@@ -1,0 +1,43 @@
+.footer
+    width: 100%
+    padding: 22px 25px
+    background-color: $grey-dark
+    display: flex
+    flex-direction: column
+    &-title
+        font-family: Shrikhand
+        font-size: 18px
+        font-weight: 400
+        margin-bottom: 16px
+        color: white
+    &-item
+        text-decoration: none
+        color: white
+        font-size: 16px
+        font-weight: 300
+        &-container
+            display: flex
+            flex-direction: column
+        &:not(:last-child)
+            margin-bottom: 7px
+        &:nth-child(-n+2)
+            font-weight: 700
+        & .fa-solid
+            margin-right: 10px
+            width: 20px
+
+@media screen and (min-width: 1024px)
+    .footer
+        flex-direction: row-reverse
+        align-items: center
+        &-item:any-link
+            margin-bottom: 0px
+        &-item
+            margin-right: 20px
+            &-container
+                display: flex
+                flex-direction: row
+        &-title
+            margin-bottom: 0px
+            margin-left: 40px
+            margin-right: 40px

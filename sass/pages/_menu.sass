@@ -1,0 +1,110 @@
+.menu-header
+    height: 275px
+    width: 100%
+    object-fit: cover
+
+.menu
+    padding-top: 32px
+    padding-bottom: 40px
+    padding-left: 13px
+    padding-right: 13px
+    border-radius: 40px 40px 0px 0px
+    position: relative
+    margin-top: -40px
+    background-color: $background-color
+    &-card-header
+        position: relative
+    &-card-section
+        margin-top: 42px
+        &-underline
+            height: 3px
+            width: 40px
+            background-color: $tertiary-color
+            margin-bottom: 12px
+    &-card-article
+        background-color: #FFFFFF
+        border-radius: 15px
+        display: flex
+        position: relative
+        box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10)
+        &:hover .menu-card-selected
+            display: flex
+            animation: Slide 350ms linear 0s 1 normal backwards
+        &:hover .menu-card-article-content
+            margin-right: 60px
+            transition: 0.5s ease
+        &:not(:last-child)
+            margin-bottom: 12px
+        &-content
+            display: flex
+            flex-direction: column
+            width: 100%
+            padding: 13px 15px
+            overflow: hidden
+            & .text
+                font-size: 15px
+                text-overflow: ellipsis
+                overflow: hidden
+                white-space: nowrap
+            & .price
+                font-size: 15px
+                font-weight: 700
+        &-info
+            display: flex
+            margin-top: 5px
+            justify-content: space-between
+            overflow: hidden
+    &-card-selected
+        background-color: $tertiary-color
+        width: 60px
+        height: 100%
+        display: none
+        align-items: center
+        justify-content: center
+        border-radius: 0px 15px 15px 0px
+        position: absolute
+        right: 0
+        bottom: 0
+        & i
+            animation: Rotation 0.7s ease 0s 1 normal none
+        & .fa-circle-check
+            color: #FFFFFF
+    &-card-btn
+        margin-top: 40px
+        display: flex
+        justify-content: center
+        & .btn
+            padding: 16px 49px
+
+.menu-card-section
+    animation: Fade 1.5s ease 0s 1 normal forwards
+    opacity: 0
+    &:nth-child(1)
+        animation-delay: 0s
+    &:nth-child(2)
+        animation-delay: 0.5s
+    &:nth-child(3)
+        animation-delay: 1s
+
+@media screen and (min-width: 1024px)
+    .menu
+        padding-right: 210px
+        padding-left: 210px
+        width: 70%
+        margin-left: auto
+        margin-right: auto
+        &-card-header
+            display: flex
+            align-items: center
+            justify-content: center
+            & .restaurants-card-icon
+                right: 0px
+                top: 0px
+                display: flex
+                align-items: center
+                position: relative
+                margin-left: 25px
+        &-card-article
+            cursor: pointer
+            &:hover
+                background-color: #f8f8f8
