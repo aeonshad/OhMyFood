@@ -447,6 +447,7 @@ body {
   .restaurants {
     padding-left: 180px;
     padding-right: 180px;
+    padding-bottom: 0;
   }
   .restaurants-card-container {
     flex-wrap: wrap;
@@ -462,7 +463,7 @@ body {
     transform: scale(1.019);
   }
   .restaurants-card:any-link {
-    margin-bottom: 18px;
+    margin-bottom: 50px;
   }
   .footer {
     flex-direction: row-reverse;
