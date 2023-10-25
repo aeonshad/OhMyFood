@@ -473,6 +473,9 @@
 .menu-card-header {
   position: relative;
 }
+.menu-card-header .restaurants-card-icon {
+  margin-right: 0px;
+}
 .menu-card-section {
   margin-top: 42px;
 }
